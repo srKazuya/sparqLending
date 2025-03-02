@@ -1,9 +1,77 @@
 @import 'normalize.css';
 
+
+
 body {
     margin: 0px;
     background-color: #040404;
     font-family: "MontserratRegular";
+}
+
+.opr {
+    padding: 0 15% 0 15%;
+    position: relative;
+}
+
+:root {
+    --background-color: #040404;
+    --h-color: white;
+    --p-color: #6B6D7F;
+    font-size: 62.5%;
+}
+
+.opr-cirlce {
+    position: absolute;
+    left: 47%;
+}
+
+.opr-li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+article {
+    width: 34rem;
+}
+
+article h3 {
+    font-size: 1.8rem;
+    color: var(--h-color);
+}
+
+article p {
+    font-size: 1.8rem;
+    color: var(--p-color);
+}
+
+.opr_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #191b24;
+    width: 39%;
+    height: 23rem;
+}
+
+ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: #191B24;
+    transform: translateX(-50%);
 }
 
 .container {
@@ -57,6 +125,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
@@ -65,8 +134,8 @@ body {
     height: 76px;
     background: linear-gradient(to bottom, #66AFF4, #4B39C6);
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba(102, 175, 244, 0.5), 
-                        0 0 30px rgba(75, 57, 198, 0.4);
+    box-shadow: 0 0 15px rgba(102, 175, 244, 0.5),
+        0 0 30px rgba(75, 57, 198, 0.4);
 }
 
 .up {
@@ -94,6 +163,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
     .block__one,
     .block__two {
         display: grid;
@@ -110,13 +180,25 @@ body {
         font-size: 16px;
         padding-left: 0;
     }
+
+    .opr-li {
+        flex-direction: column;
+    }
+
+    .opr_card {
+        width: 100%;
+    }
+
+    ul::before {
+        display: none;
+    }
 }
 
 
 @font-face {
-    font-family: "MontserratRegular";  
-    src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype"); 
-    font-style: normal; 
+    font-family: "MontserratRegular";
+    src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+    font-style: normal;
     font-weight: normal;
 }
 
