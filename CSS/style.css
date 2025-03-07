@@ -1,5 +1,9 @@
 @import 'normalize.css';
 
+html{
+    scroll-behavior: smooth;
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -13,11 +17,11 @@
 }
 
 .Header_logo_logo{
-    padding: 0px 0px 10px 0px
+    padding: 4px 0px 10px 0px
 }
 
 .Header_logo_el{
-    padding: 5px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
     color: white;
 }
 
@@ -155,6 +159,7 @@ h1 {
 
 h2 {
     color: white;
+    font-size: 4.8rem;
 }
 
 p {
@@ -180,6 +185,9 @@ body {
     margin: 0px;
     background-color: #040404;
     font-family: "MontserratRegular";
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .opr {
@@ -237,10 +245,10 @@ article p {
     height: 23rem;
 }
 
-ul::before{
+.opr__ul::before{
     content: "";
     position: absolute;
-    top: 0;
+    top: 15rem;
     left: 50%;
     width: 3px;
     height: 100%;
