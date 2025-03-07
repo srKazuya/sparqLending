@@ -4,6 +4,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.banner{
+    margin-bottom: 240px;
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -271,6 +275,7 @@ article p {
     background-position: center 0px;
     background-size: contain;
     background-size: 37%;
+    margin-top: 145px;
 }
 
 .block__one {
